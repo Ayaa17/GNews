@@ -205,7 +205,7 @@ class GNews:
         if url:
 
             if self._des_keep_url:
-                des = self._clean(item.get("description", ""))
+                des = self._clean_keep_url(item.get("description", ""))
             else:
                 des = self._clean(item.get("description", ""))
 
